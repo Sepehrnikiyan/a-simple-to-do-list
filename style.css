@@ -1,29 +1,30 @@
-/*Font setting*/
+/* فونت و تنظیمات کلی */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Tahoma', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* container main style */
+/* استایل اصلی برای container */
 .container {
-    width: 300px;
-    background: white;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     margin: 50px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
 }
 
-/* Title */
+/* عنوان */
 h1 {
-    color: #333;
-    font-size: 22px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-/*  Input section */
+/* بخش ورودی */
 .input-section {
     display: flex;
     gap: 10px;
@@ -32,19 +33,21 @@ h1 {
 
 input {
     flex: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-/* Add button */
+/* دکمه افزودن */
 button {
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 8px 12px;
+    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -52,31 +55,39 @@ button:hover {
     background-color: #218838;
 }
 
-/*  Jobs list */
+/* لیست کارها */
 ul {
     list-style: none;
     padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
+/* آیتم‌های لیست */
 li {
-    background: #f9f9f9;
-    padding: 10px;
-    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    margin: 8px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-/*  Remove button */
+li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* دکمه حذف */
 .delete-btn {
     background: #dc3545;
     color: white;
     border: none;
-    padding: 5px 8px;
+    padding: 6px 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 14px;
     transition: 0.3s;
 }
 
