@@ -1,4 +1,4 @@
-/* فونت و تنظیمات کلی */
+/* Font and general settings */
 body {
     font-family: 'Tahoma', sans-serif;
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-/* استایل اصلی برای container */
+/* Main style for container */
 .container {
     width: 350px;
     background: rgba(255, 255, 255, 0.2);
@@ -18,13 +18,14 @@ body {
     border-radius: 12px;
 }
 
-/* عنوان */
+/* Title */
 h1 {
     font-size: 24px;
+    color: black;
     margin-bottom: 15px;
 }
 
-/* بخش ورودی */
+/* Input section */
 .input-section {
     display: flex;
     gap: 10px;
@@ -39,7 +40,7 @@ input {
     font-size: 16px;
 }
 
-/* دکمه افزودن */
+/* Add button */
 button {
     background-color: #28a745;
     color: white;
@@ -55,7 +56,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* لیست کارها */
+/* To-do list */
 ul {
     list-style: none;
     padding: 0;
@@ -63,7 +64,7 @@ ul {
     overflow-y: auto;
 }
 
-/* آیتم‌های لیست */
+/* List items */
 li {
     background-color: rgb(245, 245, 245);
     color: black;
@@ -77,10 +78,10 @@ li {
 }
 
 li:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(245, 245, 245, 0.5);
 }
 
-/* دکمه حذف */
+/* Delete button */
 .delete-btn {
     background: #dc3545;
     color: white;
