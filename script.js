@@ -1,38 +1,38 @@
-// انتخاب عناصر از DOM
+// Select elements with DOM
 const taskInput = document.getElementById("taskInput");
 const addTaskButton = document.getElementById("addTask");
 const taskList = document.getElementById("taskList");
 
-// افزودن کار جدید به لیست
+// Adding new jobs
 addTaskButton.addEventListener("click", function () {
     const taskText = taskInput.value.trim(); // حذف فاصله‌های اضافی
 
     if (taskText === "") {
-        alert("Please Add a job!"); // جلوگیری از افزودن متن خالی
+        alert("Please Add a job!"); // Prevent adding empty text
         return;
     }
 
-    // ساخت عنصر جدید برای نمایش کار
+    // Creating new element for showing input text
     const li = document.createElement("li");
     li.textContent = taskText;
 
-    // دکمه حذف
+    // Remove button
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "❌";
     deleteButton.classList.add("delete-btn");
 
-    // حذف کار از لیست هنگام کلیک روی دکمه حذف
+    // Remove jobs from the list by clicking on the remove btn
     deleteButton.addEventListener("click", function () {
         li.remove();
     });
 
-    // اضافه کردن دکمه حذف به آیتم لیست
+    // Adding remove btn to list's items
     li.appendChild(deleteButton);
 
-    // اضافه کردن آیتم جدید به لیست
+    // Adding new item to list
     taskList.appendChild(li);
 
-    // پاک کردن ورودی بعد از افزودن
+    // Empty the input field after adding item
     taskInput.value = "";
 });
     

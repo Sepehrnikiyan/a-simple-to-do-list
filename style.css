@@ -1,4 +1,4 @@
-/* فونت و تنظیمات کلی */
+/*Font setting*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* استایل اصلی برای container */
+/* container main style */
 .container {
     width: 300px;
     background: white;
@@ -17,13 +17,13 @@ body {
     border-radius: 10px;
 }
 
-/* عنوان */
+/* Title */
 h1 {
     color: #333;
     font-size: 22px;
 }
 
-/* بخش ورودی */
+/*  Input section */
 .input-section {
     display: flex;
     gap: 10px;
@@ -37,7 +37,7 @@ input {
     border-radius: 5px;
 }
 
-/* دکمه افزودن */
+/* Add button */
 button {
     background-color: #28a745;
     color: white;
@@ -52,7 +52,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* لیست کارها */
+/*  Jobs list */
 ul {
     list-style: none;
     padding: 0;
@@ -69,7 +69,7 @@ li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* دکمه حذف */
+/*  Remove button */
 .delete-btn {
     background: #dc3545;
     color: white;
